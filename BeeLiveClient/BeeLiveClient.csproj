@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="BeeLive.Hive.TransferModels" Version="1.0.0" />
     <PackageReference Include="BeeLive.NoiseData.TransferModels" Version="1.0.0" />
   </ItemGroup>
 
