@@ -28,7 +28,7 @@ namespace BeeLiveClient
                 var decibel = numericUpDownMin.Value + (seed * (numericUpDownMax.Value - numericUpDownMin.Value));
                 var noiseData = new BeeLive.NoiseData.TransferModels.NoiseDataDto()
                 {
-                    HiveId = 1,
+                    HiveId = (int)numericUpDownHive.Value,
                     Decibel = decibel
                 };
                 var result = await client.PostAsJsonAsync(ConfigurationManager.AppSettings["NoiseDataUrl"], noiseData);
@@ -66,7 +66,7 @@ namespace BeeLiveClient
         {
             try
             {
-                var hive = await client.GetFromJsonAsync<BeeLive.Hive.TransferModels.HiveDto>(ConfigurationManager.AppSettings["HiveUrl"] + "/1");
+                var hive = await client.GetFromJsonAsync<BeeLive.Hive.TransferModels.HiveDto>(ConfigurationManager.AppSettings["HiveUrl"] + "/" + ((int)numericUpDownHive.Value).ToString());
                 if (hive == null)
                 {
                     textBoxHiveNoise.Text = string.Empty;

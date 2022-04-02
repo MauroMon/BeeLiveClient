@@ -45,8 +45,11 @@
             this.panelColor = new System.Windows.Forms.Panel();
             this.timerHive = new System.Windows.Forms.Timer(this.components);
             this.buttonCheckStart = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.numericUpDownHive = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHive)).BeginInit();
             this.SuspendLayout();
             // 
             // timerNoise
@@ -57,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 44);
+            this.label1.Location = new System.Drawing.Point(15, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(28, 15);
             this.label1.TabIndex = 0;
@@ -66,7 +69,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 73);
+            this.label2.Location = new System.Drawing.Point(15, 119);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 15);
             this.label2.TabIndex = 1;
@@ -74,7 +77,7 @@
             // 
             // numericUpDownMin
             // 
-            this.numericUpDownMin.Location = new System.Drawing.Point(51, 42);
+            this.numericUpDownMin.Location = new System.Drawing.Point(49, 88);
             this.numericUpDownMin.Name = "numericUpDownMin";
             this.numericUpDownMin.Size = new System.Drawing.Size(67, 23);
             this.numericUpDownMin.TabIndex = 2;
@@ -86,7 +89,7 @@
             // 
             // numericUpDownMax
             // 
-            this.numericUpDownMax.Location = new System.Drawing.Point(53, 71);
+            this.numericUpDownMax.Location = new System.Drawing.Point(51, 117);
             this.numericUpDownMax.Name = "numericUpDownMax";
             this.numericUpDownMax.Size = new System.Drawing.Size(65, 23);
             this.numericUpDownMax.TabIndex = 3;
@@ -98,7 +101,7 @@
             // 
             // buttonStartStop
             // 
-            this.buttonStartStop.Location = new System.Drawing.Point(124, 44);
+            this.buttonStartStop.Location = new System.Drawing.Point(122, 90);
             this.buttonStartStop.Name = "buttonStartStop";
             this.buttonStartStop.Size = new System.Drawing.Size(75, 23);
             this.buttonStartStop.TabIndex = 4;
@@ -108,7 +111,7 @@
             // 
             // textBoxValue
             // 
-            this.textBoxValue.Location = new System.Drawing.Point(51, 100);
+            this.textBoxValue.Location = new System.Drawing.Point(49, 146);
             this.textBoxValue.Name = "textBoxValue";
             this.textBoxValue.ReadOnly = true;
             this.textBoxValue.Size = new System.Drawing.Size(100, 23);
@@ -117,7 +120,7 @@
             // labelValue
             // 
             this.labelValue.AutoSize = true;
-            this.labelValue.Location = new System.Drawing.Point(15, 103);
+            this.labelValue.Location = new System.Drawing.Point(13, 149);
             this.labelValue.Name = "labelValue";
             this.labelValue.Size = new System.Drawing.Size(35, 15);
             this.labelValue.TabIndex = 6;
@@ -127,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(17, 9);
+            this.label3.Location = new System.Drawing.Point(15, 55);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 20);
             this.label3.TabIndex = 7;
@@ -137,7 +140,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(315, 9);
+            this.label4.Location = new System.Drawing.Point(313, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 20);
             this.label4.TabIndex = 8;
@@ -146,7 +149,7 @@
             // labelNoise
             // 
             this.labelNoise.AutoSize = true;
-            this.labelNoise.Location = new System.Drawing.Point(315, 44);
+            this.labelNoise.Location = new System.Drawing.Point(313, 90);
             this.labelNoise.Name = "labelNoise";
             this.labelNoise.Size = new System.Drawing.Size(37, 15);
             this.labelNoise.TabIndex = 10;
@@ -154,7 +157,7 @@
             // 
             // textBoxHiveNoise
             // 
-            this.textBoxHiveNoise.Location = new System.Drawing.Point(358, 41);
+            this.textBoxHiveNoise.Location = new System.Drawing.Point(356, 87);
             this.textBoxHiveNoise.Name = "textBoxHiveNoise";
             this.textBoxHiveNoise.ReadOnly = true;
             this.textBoxHiveNoise.Size = new System.Drawing.Size(100, 23);
@@ -163,7 +166,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(315, 79);
+            this.label5.Location = new System.Drawing.Point(313, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(39, 15);
             this.label5.TabIndex = 11;
@@ -171,7 +174,7 @@
             // 
             // panelColor
             // 
-            this.panelColor.Location = new System.Drawing.Point(360, 73);
+            this.panelColor.Location = new System.Drawing.Point(358, 119);
             this.panelColor.Name = "panelColor";
             this.panelColor.Size = new System.Drawing.Size(98, 26);
             this.panelColor.TabIndex = 12;
@@ -183,7 +186,7 @@
             // 
             // buttonCheckStart
             // 
-            this.buttonCheckStart.Location = new System.Drawing.Point(464, 41);
+            this.buttonCheckStart.Location = new System.Drawing.Point(462, 87);
             this.buttonCheckStart.Name = "buttonCheckStart";
             this.buttonCheckStart.Size = new System.Drawing.Size(75, 23);
             this.buttonCheckStart.TabIndex = 13;
@@ -191,11 +194,34 @@
             this.buttonCheckStart.UseVisualStyleBackColor = true;
             this.buttonCheckStart.Click += new System.EventHandler(this.buttonCheckStart_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(17, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(44, 15);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Hive id";
+            // 
+            // numericUpDownHive
+            // 
+            this.numericUpDownHive.Location = new System.Drawing.Point(67, 19);
+            this.numericUpDownHive.Name = "numericUpDownHive";
+            this.numericUpDownHive.Size = new System.Drawing.Size(67, 23);
+            this.numericUpDownHive.TabIndex = 15;
+            this.numericUpDownHive.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 145);
+            this.ClientSize = new System.Drawing.Size(576, 190);
+            this.Controls.Add(this.numericUpDownHive);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.buttonCheckStart);
             this.Controls.Add(this.panelColor);
             this.Controls.Add(this.label5);
@@ -214,6 +240,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownHive)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,5 +264,7 @@
         private Panel panelColor;
         private System.Windows.Forms.Timer timerHive;
         private Button buttonCheckStart;
+        private Label label6;
+        private NumericUpDown numericUpDownHive;
     }
 }
